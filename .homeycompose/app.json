@@ -1,0 +1,41 @@
+{
+  "id": "com.ozonos.aircleaner",
+  "version": "0.0.3",
+  "compatibility": ">=13.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Ozonos"
+  },
+  "description": {
+    "en": "Pure air. Reimagined."
+  },
+  "category": [
+    "climate"
+  ],
+  "permissions": [],
+  "brandColor": "#2E86AB",
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Danee de Kruyff",
+    "email": "daneedekruyff@outlook.com"
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "daneedekruyff"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/159217"
+  },
+  "homeyCommunityTopicId": 159217,
+  "support": "https://community.homey.app/t/159217"  
+}

@@ -1,0 +1,11 @@
+{
+  "type": "number",
+  "title": { "en": "Operating hours" },
+  "units": { "en": "h" },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "decimals": 0,
+  "insights": true,
+  "icon": "/assets/ozonos_operating_hours.svg"
+}

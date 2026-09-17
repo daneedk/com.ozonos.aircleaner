@@ -1,0 +1,12 @@
+{
+  "pair": {
+    "login": {
+      "title": "Inloggen bij Ozonos",
+      "intro": "Log in met je Ozonos-account",
+      "username_placeholder": "naam@voorbeeld.nl",
+      "password_placeholder": "Wachtwoord",
+      "button": "Inloggen",
+      "error": "Inloggen mislukt"
+    }
+  }
+}

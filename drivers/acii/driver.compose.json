@@ -1,0 +1,102 @@
+{
+  "name": {
+    "en": "Ozonos ACII"
+  },
+  "class": "fan",
+  "capabilities": [
+    "onoff",
+    "measure_ozonos_timer",
+    "meter_ozonos_hours",
+    "meter_ozonos_lamp_starts",
+    "ozonos_timer_setting"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "cloud"
+  ],
+  "images": {
+    "small": "/drivers/acii/assets/images/small.png",
+    "large": "/drivers/acii/assets/images/large.png",
+    "xlarge": "/drivers/acii/assets/images/xlarge.png"
+  },
+  "energy": {
+    "approximation": {
+      "usageOff": 1,
+      "usageOn": 9
+    }
+  },  
+  "settings": [
+    {
+      "id": "fullSerialnr",
+      "type": "label",
+      "label": {
+        "en": "Serial number",
+        "nl": "Serienummer",
+        "da": "Serienummer",
+        "de": "Seriennummer",
+        "es": "Número de serie",
+        "fr": "Numéro de série",
+        "it": "Numero di serie",
+        "ko": "일련번호",
+        "no": "Serienummer",
+        "pl": "Numer seryjny",
+        "sv": "Serienummer"
+      },
+      "value": ""
+    },
+    {
+      "id": "firmwareEsp32",
+      "type": "label",
+      "label": {
+        "en": "Firmware (ESP32)",
+        "nl": "Firmware (ESP32)",
+        "da": "Firmware (ESP32)",
+        "de": "Firmware (ESP32)",
+        "es": "Firmware (ESP32)",
+        "fr": "Firmware (ESP32)",
+        "it": "Firmware (ESP32)",
+        "ko": "펌웨어 (ESP32)",
+        "no": "Firmware (ESP32)",
+        "pl": "Firmware (ESP32)",
+        "sv": "Firmware (ESP32)"
+      },
+      "value": ""
+    },
+    {
+      "id": "firmwareHost",
+      "type": "label",
+      "label": {
+        "en": "Firmware (host)",
+        "nl": "Firmware (host)",
+        "da": "Firmware (host)",
+        "de": "Firmware (Host)",
+        "es": "Firmware (host)",
+        "fr": "Firmware (hôte)",
+        "it": "Firmware (host)",
+        "ko": "펌웨어 (호스트)",
+        "no": "Firmware (host)",
+        "pl": "Firmware (host)",
+        "sv": "Firmware (host)"
+      },
+      "value": ""
+    }
+  ],  
+  "pair": [
+    {
+      "id": "login"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}

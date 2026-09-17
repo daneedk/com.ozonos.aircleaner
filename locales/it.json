@@ -1,0 +1,12 @@
+{
+  "pair": {
+    "login": {
+      "title": "Accedi a Ozonos",
+      "intro": "Accedi con il tuo account Ozonos",
+      "username_placeholder": "nome@esempio.it",
+      "password_placeholder": "Password",
+      "button": "Accedi",
+      "error": "Accesso non riuscito"
+    }
+  }
+}

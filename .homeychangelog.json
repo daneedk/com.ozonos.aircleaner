@@ -1,0 +1,21 @@
+{
+  "0.0.1": {
+    "en": "Initial version"
+  },
+  "0.0.2": {
+    "en": "Added links to Community Forum"
+  },
+  "0.0.3": {
+    "en": "• Added translations for additional languages • Added proper device icon",
+    "nl": "• Vertalingen voor extra talen toegevoegd • Correct apparaatpictogram toegevoegd",
+    "da": "• Tilføjet oversættelser til yderligere sprog • Tilføjet korrekt enhedsikon",
+    "de": "• Übersetzungen für weitere Sprachen hinzugefügt • Passendes Geräte-Symbol hinzugefügt",
+    "es": "• Se añadieron traducciones para idiomas adicionales • Se añadió un icono de dispositivo adecuado",
+    "fr": "• Ajout de traductions pour des langues supplémentaires • Ajout d'une icône d'appareil appropriée",
+    "it": "• Aggiunte traduzioni per lingue aggiuntive • Aggiunta un'icona del dispositivo appropriata",
+    "ko": "• 추가 언어 번역 추가 • 적절한 기기 아이콘 추가",
+    "no": "• Lagt til oversettelser for flere språk • Lagt til riktig enhetsikon",
+    "pl": "• Dodano tłumaczenia dla dodatkowych języków • Dodano właściwą ikonę urządzenia",
+    "sv": "• Lade till översättningar för fler språk • Lade till korrekt enhetsikon"
+  }
+}

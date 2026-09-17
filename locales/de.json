@@ -1,0 +1,12 @@
+{
+  "pair": {
+    "login": {
+      "title": "Bei Ozonos anmelden",
+      "intro": "Melde dich mit deinem Ozonos-Konto an",
+      "username_placeholder": "name@beispiel.de",
+      "password_placeholder": "Passwort",
+      "button": "Anmelden",
+      "error": "Anmeldung fehlgeschlagen"
+    }
+  }
+}

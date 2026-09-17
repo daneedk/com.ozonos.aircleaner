@@ -1,0 +1,12 @@
+{
+  "pair": {
+    "login": {
+      "title": "Iniciar sesión en Ozonos",
+      "intro": "Inicia sesión con tu cuenta de Ozonos",
+      "username_placeholder": "nombre@ejemplo.com",
+      "password_placeholder": "Contraseña",
+      "button": "Iniciar sesión",
+      "error": "Error al iniciar sesión"
+    }
+  }
+}
