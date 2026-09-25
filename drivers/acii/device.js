@@ -45,7 +45,7 @@ module.exports = class OzonosACIIDevice extends Homey.Device {
         return;
       }
 
-      const authtoken = loginJson.data.authtoken;
+      const { authtoken } = loginJson.data;
 
       const devicesRes = await fetch('https://cloud.ozonos.com/api/?c=client_devices&a=get', {
         method: 'POST',
@@ -86,7 +86,7 @@ module.exports = class OzonosACIIDevice extends Homey.Device {
 
     this.client.on('connect', () => {
       this.log('MQTT connected');
-      this.setAvailable();
+      this.setAvailable().catch(this.error);
       this.client.subscribe(this.topicInfo, (err) => {
         if (err) this.error('MQTT subscribe failed', err);
       });
@@ -110,7 +110,7 @@ module.exports = class OzonosACIIDevice extends Homey.Device {
     let data;
     try {
       data = JSON.parse(payload.toString());
-      //this.log('INFO message received:', JSON.stringify(data));
+      // this.log('INFO message received:', JSON.stringify(data));
     } catch (err) {
       this.error('Failed to parse INFO payload', err);
       return;

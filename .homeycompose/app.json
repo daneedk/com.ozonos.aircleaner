@@ -1,6 +1,6 @@
 {
   "id": "com.ozonos.aircleaner",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "compatibility": ">=13.0.0",
   "sdk": 3,
   "platforms": [
@@ -37,5 +37,5 @@
     "url": "https://community.homey.app/t/159217"
   },
   "homeyCommunityTopicId": 159217,
-  "support": "https://community.homey.app/t/159217"  
+  "support": "https://community.homey.app/t/159217"
 }

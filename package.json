@@ -1,10 +1,14 @@
 {
   "name": "com.ozonos.aircleaner",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint ."
+  },
   "devDependencies": {
-    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12"
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",
+    "eslint": "^8.57.1",
+    "eslint-config-athom": "^4.0.2"
   },
   "dependencies": {
     "mqtt": "^5.15.2"

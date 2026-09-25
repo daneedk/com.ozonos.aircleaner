@@ -25,8 +25,8 @@ module.exports = class OzonosACIIDriver extends Homey.Driver {
         body: `email=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
       });
       const text = await res.text();
-      //this.log('login response status:', res.status, 'body:', text);
-      //this.log('login response headers:', JSON.stringify([...res.headers.entries()]));
+      // this.log('login response status:', res.status, 'body:', text);
+      // this.log('login response headers:', JSON.stringify([...res.headers.entries()]));
 
       const json = JSON.parse(text);
 
@@ -50,8 +50,8 @@ module.exports = class OzonosACIIDriver extends Homey.Driver {
         body: 'id=undefined',
       });
       const text = await res.text();
-      //this.log('list_devices response status:', res.status, 'body:', text);
-      //this.log('list_devices response headers:', JSON.stringify([...res.headers.entries()]));
+      // this.log('list_devices response status:', res.status, 'body:', text);
+      // this.log('list_devices response headers:', JSON.stringify([...res.headers.entries()]));
 
       const json = JSON.parse(text);
 
