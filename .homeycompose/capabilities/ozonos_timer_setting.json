@@ -1,0 +1,29 @@
+{
+  "type": "enum",
+  "title": { "en": "Timer (minutes)" },
+  "values": [
+    {
+      "id": "60",
+      "title": { "en": "60 minutes"}
+    },
+    {
+    "id": "90",
+      "title": { "en": "90 minutes"}
+    },
+        {
+    "id": "120",
+      "title": { "en": "120 minutes"}
+    },
+        {
+    "id": "180",
+      "title": { "en": "180 minutes"}
+    },
+        {
+    "id": "240",
+      "title": { "en": "240 minutes"}
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker"
+}

@@ -1,0 +1,12 @@
+{
+  "pair": {
+    "login": {
+      "title": "Logga in på Ozonos",
+      "intro": "Logga in med ditt Ozonos-konto",
+      "username_placeholder": "namn@exempel.se",
+      "password_placeholder": "Lösenord",
+      "button": "Logga in",
+      "error": "Inloggningen misslyckades"
+    }
+  }
+}

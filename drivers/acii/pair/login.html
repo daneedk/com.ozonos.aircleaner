@@ -1,0 +1,43 @@
+<style>
+  .ozonos-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+  }
+</style>
+
+<div class="ozonos-login">
+  <img src="../../../assets/images/small.png" alt="Ozonos" style="align-self:center;" />
+  <p data-i18n="pair.login.intro">Log in with your Ozonos account</p>
+
+  <input type="email" id="username" data-i18n-placeholder="pair.login.username_placeholder" />
+  <input type="password" id="password" data-i18n-placeholder="pair.login.password_placeholder" />
+
+  <button id="login_button" class="homey-button-primary" data-i18n="pair.login.button"
+    style="position:fixed; left:20px; right:20px; bottom:calc(20px + env(safe-area-inset-bottom));">
+    Sign in
+  </button>
+</div>
+
+<script>
+  Homey.setTitle(Homey.__('pair.login.title'));
+
+  document.getElementById('login_button').addEventListener('click', async () => {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    Homey.showLoadingOverlay();
+
+    try {
+      await Homey.emit('login', { username, password });
+      Homey.showView('list_devices');
+    } catch (err) {
+      Homey.alert(err.message || Homey.__('pair.login.error'), 'error');
+    } finally {
+      Homey.hideLoadingOverlay();
+    }
+  });
+</script>

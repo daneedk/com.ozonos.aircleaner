@@ -1,0 +1,10 @@
+{
+  "type": "number",
+  "title": { "en": "Lamp starts" },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "decimals": 0,
+  "insights": true,
+  "icon": "/assets/ozonos_lamp_starts.svg"
+}
