@@ -102,7 +102,7 @@ module.exports = class OzonosACIIDevice extends Homey.Device {
     });
 
     this.client.on('close', () => {
-      this.setUnavailable('Verbinding met Ozonos cloud verbroken').catch(() => {});
+      this.setUnavailable('Connection to the Ozonos cloud lost').catch(() => {});
     });
   }
 
@@ -132,12 +132,19 @@ module.exports = class OzonosACIIDevice extends Homey.Device {
     }).catch(this.error);
   }
 
+  async publishRemote(payload) {
+    if (!this.client || !this.client.connected) {
+      throw new Error('No connection to the Ozonos cloud, please try again in a moment');
+    }
+    await this.client.publishAsync(this.topicRemote, JSON.stringify(payload));
+  }
+
   async onCapabilityOnoff(value) {
     const timer = Number(this.getCapabilityValue('ozonos_timer_setting')) || 0;
-    this.client.publish(this.topicRemote, JSON.stringify({
+    await this.publishRemote({
       pwr: value ? 1 : 0,
       timer,
-    }));
+    });
   }
 
   async onCapabilityTimerSetting(value) {
@@ -146,10 +153,10 @@ module.exports = class OzonosACIIDevice extends Homey.Device {
   }
 
   async turnOnForMinutes(minutes) {
-    this.client.publish(this.topicRemote, JSON.stringify({
+    await this.publishRemote({
       pwr: 1,
       timer: minutes,
-    }));
+    });
   }
 
   async onUninit() {
