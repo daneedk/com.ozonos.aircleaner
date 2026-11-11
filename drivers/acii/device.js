@@ -4,8 +4,7 @@ const Homey = require('homey');
 const mqtt = require('mqtt');
 
 const MQTT_URL = 'wss://cloud.ozonos.com:8443/mqtt';
-const MQTT_USERNAME = Homey.env.MQTT_USERNAME;
-const MQTT_PASSWORD = Homey.env.MQTT_PASSWORD;
+const { MQTT_USERNAME, MQTT_PASSWORD } = Homey.env;
 
 module.exports = class OzonosACIIDevice extends Homey.Device {
   async onInit() {
