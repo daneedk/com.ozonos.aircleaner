@@ -8,7 +8,6 @@ const MQTT_USERNAME = Homey.env.MQTT_USERNAME;
 const MQTT_PASSWORD = Homey.env.MQTT_PASSWORD;
 
 module.exports = class OzonosACIIDevice extends Homey.Device {
-
   async onInit() {
     this.log('OzonosACIIDevice initialized');
 
@@ -164,5 +163,4 @@ module.exports = class OzonosACIIDevice extends Homey.Device {
       this.client.end(true);
     }
   }
-
 };

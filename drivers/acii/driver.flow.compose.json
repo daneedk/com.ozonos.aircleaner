@@ -85,71 +85,86 @@
             "sv": "Minuter"
           },
           "values": [
-            { "id": "60", "title": {
-              "en": "60 minutes",
-              "nl": "60 minuten",
-              "da": "60 minutter",
-              "de": "60 Minuten",
-              "es": "60 minutos",
-              "fr": "60 minutes",
-              "it": "60 minuti",
-              "ko": "60분",
-              "no": "60 minutter",
-              "pl": "60 minut",
-              "sv": "60 minuter"
-            } },
-            { "id": "90", "title": {
-              "en": "90 minutes",
-              "nl": "90 minuten",
-              "da": "90 minutter",
-              "de": "90 Minuten",
-              "es": "90 minutos",
-              "fr": "90 minutes",
-              "it": "90 minuti",
-              "ko": "90분",
-              "no": "90 minutter",
-              "pl": "90 minut",
-              "sv": "90 minuter"
-            } },
-            { "id": "120", "title": {
-              "en": "120 minutes",
-              "nl": "120 minuten",
-              "da": "120 minutter",
-              "de": "120 Minuten",
-              "es": "120 minutos",
-              "fr": "120 minutes",
-              "it": "120 minuti",
-              "ko": "120분",
-              "no": "120 minutter",
-              "pl": "120 minut",
-              "sv": "120 minuter"
-            } },
-            { "id": "180", "title": {
-              "en": "180 minutes",
-              "nl": "180 minuten",
-              "da": "180 minutter",
-              "de": "180 Minuten",
-              "es": "180 minutos",
-              "fr": "180 minutes",
-              "it": "180 minuti",
-              "ko": "180분",
-              "no": "180 minutter",
-              "pl": "180 minut",
-              "sv": "180 minuter"
-            } },
-            { "id": "240", "title": {
-              "en": "240 minutes",
-              "nl": "240 minuten",
-              "da": "240 minutter",
-              "de": "240 Minuten",
-              "es": "240 minutos",
-              "fr": "240 minutes",
-              "it": "240 minuti",
-              "ko": "240분",
-              "no": "240 minutter",
-              "pl": "240 minut",
-              "sv": "240 minuter"
-            } }
+            {
+              "id": "60",
+              "title": {
+                "en": "60 minutes",
+                "nl": "60 minuten",
+                "da": "60 minutter",
+                "de": "60 Minuten",
+                "es": "60 minutos",
+                "fr": "60 minutes",
+                "it": "60 minuti",
+                "ko": "60분",
+                "no": "60 minutter",
+                "pl": "60 minut",
+                "sv": "60 minuter"
+              }
+            },
+            {
+              "id": "90",
+              "title": {
+                "en": "90 minutes",
+                "nl": "90 minuten",
+                "da": "90 minutter",
+                "de": "90 Minuten",
+                "es": "90 minutos",
+                "fr": "90 minutes",
+                "it": "90 minuti",
+                "ko": "90분",
+                "no": "90 minutter",
+                "pl": "90 minut",
+                "sv": "90 minuter"
+              }
+            },
+            {
+              "id": "120",
+              "title": {
+                "en": "120 minutes",
+                "nl": "120 minuten",
+                "da": "120 minutter",
+                "de": "120 Minuten",
+                "es": "120 minutos",
+                "fr": "120 minutes",
+                "it": "120 minuti",
+                "ko": "120분",
+                "no": "120 minutter",
+                "pl": "120 minut",
+                "sv": "120 minuter"
+              }
+            },
+            {
+              "id": "180",
+              "title": {
+                "en": "180 minutes",
+                "nl": "180 minuten",
+                "da": "180 minutter",
+                "de": "180 Minuten",
+                "es": "180 minutos",
+                "fr": "180 minutes",
+                "it": "180 minuti",
+                "ko": "180분",
+                "no": "180 minutter",
+                "pl": "180 minut",
+                "sv": "180 minuter"
+              }
+            },
+            {
+              "id": "240",
+              "title": {
+                "en": "240 minutes",
+                "nl": "240 minuten",
+                "da": "240 minutter",
+                "de": "240 Minuten",
+                "es": "240 minutos",
+                "fr": "240 minutes",
+                "it": "240 minuti",
+                "ko": "240분",
+                "no": "240 minutter",
+                "pl": "240 minut",
+                "sv": "240 minuter"
+              }
+            }
           ]
         }
       ]

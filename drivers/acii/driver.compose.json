@@ -10,12 +10,8 @@
     "meter_ozonos_lamp_starts",
     "ozonos_timer_setting"
   ],
-  "platforms": [
-    "local"
-  ],
-  "connectivity": [
-    "cloud"
-  ],
+  "platforms": ["local"],
+  "connectivity": ["cloud"],
   "images": {
     "small": "/drivers/acii/assets/images/small.png",
     "large": "/drivers/acii/assets/images/large.png",
@@ -26,7 +22,7 @@
       "usageOff": 1,
       "usageOn": 9
     }
-  },  
+  },
   "settings": [
     {
       "id": "fullSerialnr",
@@ -82,7 +78,7 @@
       },
       "value": ""
     }
-  ],  
+  ],
   "pair": [
     {
       "id": "login"

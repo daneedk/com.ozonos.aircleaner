@@ -3,14 +3,12 @@
 const Homey = require('homey');
 
 module.exports = class OzonosACIIDriver extends Homey.Driver {
-
   async onInit() {
     this.log('OzonosACIIDriver initialized');
 
-    this.homey.flow.getActionCard('turn_on_for_minutes')
-      .registerRunListener(async (args) => {
-        await args.device.turnOnForMinutes(Number(args.minutes));
-      });
+    this.homey.flow.getActionCard('turn_on_for_minutes').registerRunListener(async (args) => {
+      await args.device.turnOnForMinutes(Number(args.minutes));
+    });
   }
 
   async onPair(session) {
@@ -66,5 +64,4 @@ module.exports = class OzonosACIIDriver extends Homey.Driver {
       }));
     });
   }
-
 };
